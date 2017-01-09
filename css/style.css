@@ -83,7 +83,7 @@ a:hover{
 	font-size: 24px;
 	font-weight: bold;
 	background-color: rgba(248,248,248,0.1);
-	border-radius: 0px;
+	border-radius: 2px;
 	border: 2px solid rgba(34,49,63,1);}
 
 .btn-accueil:hover{
@@ -92,7 +92,7 @@ a:hover{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	background-color: rgba(248,248,248,1);
-	border-radius: 0px;
+	border-radius: 50px;
 	border: 2px solid rgba(34,222,211,1);}
 
 .spacer{
