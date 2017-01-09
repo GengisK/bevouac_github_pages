@@ -114,6 +114,7 @@
       <div class="row">
         <div class="col-sm-8">
           <div id="map" style="width: 80%; height: 300px;"></div>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Xln0jXbjXQUtJ8YzgPqFN3C_ZAj7ddk&callback=initMap" type="text/javascript"></script>
           <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
           <script type="text/javascript">
             var myLatlng = new google.maps.LatLng(48.8421490,2.2941400);
@@ -122,7 +123,7 @@
                 zoom: 14,
                 center: myLatlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: []
+                styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":40}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-10},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":10}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":60}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]}]
               };
 
             var map = new google.maps.Map(document.getElementById('map'), myOptions);
