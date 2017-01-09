@@ -71,22 +71,7 @@
       </nav>
     </div>
 
-
-
-    <div id="titles">
-      <img src="images/logo_bevouac/logo_bevouac_22313f.png" alt="Logo Bevouac" width="300">
-      <h1>
-      L'AMI SUR QUI COMPTER POUR VOTRE ACHAT IMMOBILIER
-      </h1>
-      <h2>
-      Testez gratuitement :
-      </h2>
-
-      <button type="button" class="btn btn-lg btn-accueil" data-toggle="modal" data-target="#preorder">
-        OBTENIR L'APP
-      </button>
-      
-      <div class="modal fade" id="preorder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="preorder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -123,48 +108,53 @@
         </div>
       </div>
 
-      <div>
-        <img src="images/content/external/app_store_apple_google.png" alt="available on app stores" width="75">
-      </div>
-    </div>
+    <div class="big-spacer"></div>
 
-    <div class="spacer"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div id="map" style="width: 80%; height: 300px;"></div>
+          <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+          <script type="text/javascript">
+            var myLatlng = new google.maps.LatLng(48.8421490,2.2941400);
 
-    <div id="content">
-      <div id="concept-titles" class="text-center">
-        <h3>
-          LE CONCEPT
-        </h3>
-        <h4>
-          Une application afin de réaliser un achat immobilier plus éclairé
-        </h4>
-      </div>
-      <div class="spacer"></div>
-      <div id="concept-pics" class="container text-center">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/content/concept/my_project_2.png" alt="my project" width="150">
-            <p>
-              Précisez votre projet immobilier
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <img src="images/content/concept/my_visits_2.png" alt="my visits" width="150">
-            <p>
-              Bevouac <i class="fa fa-registered" aria-hidden="true"></i> vous accompagne lors de vos visites
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <img src="images/content/concept/my_report_2.png" alt="my report" width="150">
-            <p>
-              Recevez le conseil d'un expert désintéressé
-            </p>
-          </div>
+            var myOptions = {
+                zoom: 14,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":40}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-10},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":10}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":60}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]}]};
+
+            var map = new google.maps.Map(document.getElementById('map'), myOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: "You are here!"
+            });
+          </script>
+        </div>
+        <div class="col-sm-4">
+          <h1>Contact
+          </h1>
+          <ul class="list-unstyled">
+            <li>
+            Bevouac S.A.S.
+            </li>
+            <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            22 rue de l'abbé groult, 75015, Paris, France
+            </li>
+            <li>
+            <i class="fa fa-phone" aria-hidden="true"></i> 06 59 70 11 65
+            </li>
+            <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i> contact@bevouac.com
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div class="spacer"></div>
+    <div class="big-spacer"></div>
 
     <div class="container">
       <div class="row">
