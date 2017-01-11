@@ -115,9 +115,9 @@ a:hover{
 	padding-top: 2em;
 	padding-bottom: 2em;}
 #footers a{color: rgba(34,49,63,1);
-text-decoration: none;}
+	text-decoration: none;}
 #footers a:hover{color: rgba(34,222,211,1);
-text-decoration: none;}
+	text-decoration: none;}
 
 .team{
   border-radius: 50%;
