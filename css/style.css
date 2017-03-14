@@ -33,6 +33,10 @@
   	color: rgba(34,222,211,1);
   	background-color: rgba(0,0,0,0.1);}
 
+#agents{
+	color: rgba(34,222,211,1);}
+
+
 h1{
 	margin-bottom: 1em;
 	font-family: 'Roboto', sans-serif;
