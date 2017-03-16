@@ -99,7 +99,7 @@ a:hover{
 	margin-right:20%;
 }
 
-.btn-accueil{
+.btn-style-1{
 	color: rgba(34,49,63,1);
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
@@ -108,7 +108,7 @@ a:hover{
 	border-radius: 2px;
 	border: 2px solid rgba(34,49,63,1);}
 
-.btn-accueil:hover{
+.btn-style-1:hover{
 	transition: 0.5s;
 	color: rgba(34,222,211,1);
 	font-family: 'Roboto', sans-serif;
